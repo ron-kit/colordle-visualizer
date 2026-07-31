@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Colordle 3D Guess Cube",
+  "version": "1.0.0",
+  "description": "Visualize your Colordle guesses as colored spheres inside a rotatable, zoomable 3D RGB cube.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://colordle.ryantanen.com/*",
+        "http://colordle.ryantanen.com/*"
+      ],
+      "js": ["content.js"],
+      "css": ["panel.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "permissions": ["storage"],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "colordle-3d-cube@local.ext",
+      "strict_min_version": "109.0"
+    }
+  }
+}
