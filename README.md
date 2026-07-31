@@ -1,18 +1,16 @@
-# Colordle 3D Guess Cube
+# Colordle Visualiser
 
-A Chrome/Edge/Brave extension that adds a slide-out panel to
-colordle.ryantanen.com showing all your guesses as colored spheres
-floating inside a rotatable, zoomable 3D RGB cube (axes = Red, Green, Blue,
-each 0–255).
+A browser extension that adds a panel to [Colordle](colordle.ryantanen.com) 
+showing all your guesses as colored spheres floating inside a rotatable & zoomable 
+3D RGB cube (axes = Red, Green, Blue, each 0–255).
 
-## Install (unpacked, ~30 seconds)
+## Installation
 
-1. Unzip this folder somewhere permanent (don't delete it afterward — Chrome
-   loads the extension directly from these files).
-2. Open `chrome://extensions` (or `edge://extensions`, `brave://extensions`).
+1. Download and unzip this project
+2. Open `chrome://extensions`
 3. Turn on **Developer mode** (top-right toggle).
 4. Click **Load unpacked** and select the `colordle-3d` folder.
-5. Go to https://colordle.ryantanen.com/ (reload the page if it was already open).
+5. Go to [colordle](https://colordle.ryantanen.com/) (reload the page if it was already open)
 
 You should see a small **"3D Guesses"** pill button in the bottom-right corner.
 
@@ -38,7 +36,6 @@ need to do the picking step once per browser install.
 ## Notes
 
 - Everything runs locally in your browser — no data leaves your machine.
-- This only activates on colordle.ryantanen.com. If you play a different
-  Colordle variant, tell me the URL and I'll point the extension at it.
+- This only activates on colordle.ryantanen.com, no other websites.
 - The 3D view is a small hand-rolled canvas renderer (no external libraries),
   so it loads instantly and works offline.
